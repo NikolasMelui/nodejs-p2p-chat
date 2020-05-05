@@ -1,6 +1,6 @@
-# 🔥 Nikolasmelui Nodejs Boilerplate
+# 🔥 Nodejs P2P Chat
 
-Nikolasmelui Nodejs Boilerplate powered by [NikolasMelui][nikolasmelui] is a lightweight nodejs boilerplate using [eslint][eslint], [prettier][prettier], [lint-staged][lint-staged], [husky][husky] and [nodemon][nodemon] onboard. Just clone it, `nmp i`, `npm start` and have fun!
+Simple p2p chat made with Nodejs
 
 ## Installation
 
@@ -49,13 +49,6 @@ This is an opensource project, so all of the contributions are welcome. Make a f
 | Lint-staged | +      |
 | Prettier    | +      |
 | Husky       | +      |
-| Logger      | -      |
-| CI\CD       | -      |
-| Docker      | -      |
-| Postgres    | -      |
-| Workers     | -      |
-| WebSockets  | -      |
-| VMContexts  | -      |
 
 ---
 
