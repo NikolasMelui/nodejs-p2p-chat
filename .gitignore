@@ -9,3 +9,4 @@ npm-debug.log*
 .env
 .env.test
 .DS_Store
+config.js
