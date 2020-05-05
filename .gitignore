@@ -1,0 +1,11 @@
+
+node_modules/
+*.log
+*.pem
+npm-debug.log*
+.npm
+.eslintcache
+.node_repl_history
+.env
+.env.test
+.DS_Store
