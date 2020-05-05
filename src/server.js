@@ -1,24 +1,15 @@
 'use strict';
 
 // Libraries
-const http = require('http');
+const net = require('net');
 
-// DonEnv
-const dotenv = require('dotenv');
-dotenv.config();
-const { APPLICATION_HOST, APPLICATION_PORT } = process.env;
+// Config
+const { APPLICATION_HOST, APPLICATION_PORT } = require('./config');
 
-// Helpers
-const { getApplicationHost, getApplicationPort } = require('./helpers');
-
-http
-  .createServer((req, res) => {
-    res.writeHead(200, 'OK', { 'Content-Type': 'text/plain' });
-    res.end(
-      `Hello from ${getApplicationHost(req)}:${getApplicationPort(
-        req,
-      )} and welcome to the nikolasmelui-node-boilerplate!`,
-    );
+net
+  .createServer((socket) => {
+    console.log('A client connected');
+    socket.on('data', (data) => socket.write(data));
   })
   .listen(APPLICATION_PORT, APPLICATION_HOST, () =>
     console.log(
